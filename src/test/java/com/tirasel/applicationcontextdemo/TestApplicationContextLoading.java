@@ -25,4 +25,10 @@ public class TestApplicationContextLoading {
         assertThat(applicationContext).isNotNull();
 
     }
+
+    @Test
+    void whenGetApplicationContext_thenReturnApplicationContext() {
+        ApplicationContext context = ApplicationContextProvider.getApplicationContext();
+        assertThat(context).isNotNull();
+    }
 }
